@@ -1,0 +1,4 @@
+Notice
+
+cd
+/Users/easycash/Documents/Exercices-Angular/Exercices-Angular
