@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appareil.component.scss']
 })
 export class AppareilComponent implements OnInit {
- 
-  
+  appareilName = 'machine à laver';
   constructor() { }
 
   ngOnInit(): void {
