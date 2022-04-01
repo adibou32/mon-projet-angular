@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input ,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mon-premier-component',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mon-premier-component.component.scss']
 })
 export class MonPremierComponentComponent implements OnInit {
-  appareilName = 'machine à laver';
+  @Input() appareilName: string | undefined;
+  @ Input() appareilFunction: string | undefined;
   appareilStatus = 'éteint';
+  appareil = 'éteint';
   constructor() { }
 
   ngOnInit(): void {

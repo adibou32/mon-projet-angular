@@ -1,5 +1,12 @@
 <p>mon-premier-component works!</p>
 <li class="list-group-item">
-<h4>Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
+<h4>Appareil : {{ appareilName }} -- ordinateur : {{ getStatus() }}</h4>
+
+<h4>Appareil : {{ appareilFunction }} -- Machine à laver : {{ getStatus() }}</h4>
+
+<h4>Appareil : {{ appareilFunction }} -- lave linge : {{ getStatus() }}</h4>
+<input type="text" class="form-control" [(ngModel)]="appareilFunction">
+<h4>Appareil : {{ appareilName }} -- ordinateur : {{ getStatus() }}</h4>
 <input type="text" class="form-control" [(ngModel)]="appareilName">
+
 </li>
