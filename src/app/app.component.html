@@ -2,9 +2,13 @@
 <ul class="list-group">
 <app-mon-premier-component>'mon premier works'</app-mon-premier-component>
 
-<!-- <app-appareil></app-appareil> -->
+<!-- <app-appareil ngFor="let appareil of appareils" [appareilName]="appareil.name"
+[appareilStatus]="appareil.status"></app-appareil> -->
+<!-- <app-appareil ngFor="let appareil of appareils" [appareilName]="appareil.name"
+[appareilStatus]="appareil.status"></app-appareil> -->
 <!-- <app-appareil>'Télévision'</app-appareil>
 <app-appareil>"ordinateur"</app-appareil> -->
+
 </ul>
 
 <button class ="btn btn-sucess" [disabled]="!isAuth" (click)="onAllumer()" >Tout allumer</button>

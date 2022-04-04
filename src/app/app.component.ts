@@ -7,6 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isAuth = false;
+
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'allumé'
+    },
+    {
+      name: 'Télévision',
+      status: 'allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'allumé'
+    },
+  ];
+
   appareilOne = 'machine à laver';
   appareilTwo = 'Télévision';
   appareilThree = 'ordinateur';

@@ -8,8 +8,9 @@ import { Component, Input ,OnInit } from '@angular/core';
 export class MonPremierComponentComponent implements OnInit {
   @Input() appareilName: string | undefined;
   @ Input() appareilFunction: string | undefined;
-  @ Input() appareilStatus = 'éteint';
-  appareil = 'éteint';
+  @ Input() appareilStatus = 'allumé';
+  @ Input() appareilOn = 'éteint';
+  // appareil = 'éteint';
   constructor() { }
 
   ngOnInit(): void {
@@ -17,5 +18,7 @@ export class MonPremierComponentComponent implements OnInit {
   getStatus(){
     return this.appareilStatus;
   }
-
+  getStatus2(){
+    return this.appareilOn;
+  }
 }
