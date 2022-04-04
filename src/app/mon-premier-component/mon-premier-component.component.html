@@ -1,5 +1,7 @@
 <p>mon-premier-component works!</p>
 <li class="list-group-item">
+    <div style="width:20px;height:20px;background-color:red;"
+    *ngIf="appareilStatus === 'éteint'"></div>
 <h4>Appareil : {{ appareilName }} -- ordinateur : {{ getStatus() }}</h4>
 
 <h4>Appareil : {{ appareilFunction }} -- Machine à laver : {{ getStatus() }}</h4>
