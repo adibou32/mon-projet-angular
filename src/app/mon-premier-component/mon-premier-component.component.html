@@ -2,14 +2,20 @@
 <li class="list-group-item">
     <div style="width:20px;height:20px;background-color:red;"
     *ngIf="appareilStatus === 'éteint'"></div>
-<h4>Appareil : {{ appareilName }} -- ordinateur : {{ getStatus2() }}</h4>
-
-<h4>Appareil : {{ appareilFunction }} -- Machine à laver : {{ getStatus() }}</h4>
-
-<h4>Appareil : {{ appareilFunction }} -- lave linge : {{ getStatus2() }}</h4>
+<h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- ordinateur : {{ getStatus() }}</h4>
+<div style="width:20px;height:20px;background-color:red;"
+    *ngIf="appareilStatus === 'allumé'"></div>
+<h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilFunction }} -- Machine à laver : {{ getStatus() }}</h4>
+<div style="width:20px;height:20px;background-color:red;"
+    *ngIf="appareilStatus2 === 'éteint'"></div>
+<h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilFunction }} -- lave linge : {{ getStatus() }}</h4>
 <input type="text" class="form-control" [(ngModel)]="appareilFunction">
-<h4>Appareil : {{ appareilName }} -- ordinateur : {{ getStatus() }}</h4>
+<div style="width:20px;height:20px;background-color:red;"
+    *ngIf="appareilStatus === 'éteint'"></div>
+<h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- ordinateur : {{ getStatus() }}</h4>
 <input type="text" class="form-control" [(ngModel)]="appareilName">
+<div style="width:20px;height:20px;background-color:red;"
+*ngIf="appareilStatus === 'éteint'"></div>
 
 
 </li>
