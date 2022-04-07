@@ -1,5 +1,5 @@
 <p>mon-premier-component works!</p>
-<li class="list-group-item">
+<li [ngClass]="{'list-group-item':true, 'list-group-item-sucess': appareilStatus2 === 'allumé', 'list-group-item-danger': appareilStatus2 === 'éteint'}">
     <div style="width:20px;height:20px;background-color:red;"
     *ngIf="appareilStatus === 'éteint'"></div>
 <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- ordinateur : {{ getStatus() }}</h4>

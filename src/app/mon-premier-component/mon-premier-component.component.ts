@@ -10,7 +10,7 @@ export class MonPremierComponentComponent implements OnInit {
   @ Input() appareilFunction: string | undefined;
   @ Input() appareilStatus = 'éteint';
   // appareil = 'éteint';
-  @ Input() appareilStatus2 = 'éteint';
+  @ Input() appareilStatus2 = 'allumé';
   @ Input() appareilOn = '&&&';
   @ Input() colorRed = '&&&';
   // @ Input() colorGreen = 'Green';
