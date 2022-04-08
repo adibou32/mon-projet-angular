@@ -1,4 +1,6 @@
 <p>mon-premier-component works!</p>
+<h4>Ceci est dans app component</h4>
+ <p>{{ lastUpdate | date}}</p>
 <li [ngClass]="{'list-group-item':true, 'list-group-item-sucess': appareilStatus2 === 'allumé', 'list-group-item-danger': appareilStatus2 === 'éteint'}">
     <div style="width:20px;height:20px;background-color:red;"
     *ngIf="appareilStatus === 'éteint'"></div>

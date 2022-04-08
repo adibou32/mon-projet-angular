@@ -13,6 +13,7 @@ export class MonPremierComponentComponent implements OnInit {
   @ Input() appareilStatus2 = 'allumé';
   @ Input() appareilOn = '&&&';
   @ Input() colorRed = '&&&';
+  @ Input() lastUpdate = 'date';
   // @ Input() colorGreen = 'Green';
   
 
