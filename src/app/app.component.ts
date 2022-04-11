@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppareilService } from './services/appareil.services';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isAuth = false;
 
-  lastUpdate = new Date();
+  lastUpdate = new Date()
 
   appareils = [
     {
@@ -28,7 +29,7 @@ export class AppComponent {
   appareilOne = 'machine à laver';
   appareilTwo = 'Télévision';
   appareilThree = 'ordinateur';
-  constructor () {
+  constructor (private appareilServices: AppareilService) {
     setTimeout(
       () => {
         this.isAuth = true;

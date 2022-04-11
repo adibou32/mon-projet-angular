@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonPremierComponentComponent } from './mon-premier-component/mon-premier-component.component';
 import { AppareilComponent } from './appareil/appareil.component';
+import { AppareilService} from './services/appareil.services';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AppareilComponent } from './appareil/appareil.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AppareilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
