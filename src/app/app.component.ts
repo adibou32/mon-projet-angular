@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AppareilService } from './services/appareil.services';
 
 @Component({
@@ -6,29 +6,15 @@ import { AppareilService } from './services/appareil.services';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   isAuth = false;
 
   lastUpdate = new Date()
 
-  appareils = [
-    {
-      name: 'Machine à laver',
-      status: 'allumé'
-    },
-    {
-      name: 'Télévision',
-      status: 'allumé'
-    },
-    {
-      name: 'Ordinateur',
-      status: 'allumé'
-    },
-  ];
+  
 
-  appareilOne = 'machine à laver';
-  appareilTwo = 'Télévision';
-  appareilThree = 'ordinateur';
+  appareils: any[] | undefined;
+  
   constructor (private appareilServices: AppareilService) {
     setTimeout(
       () => {
@@ -36,6 +22,11 @@ export class AppComponent {
       }, 4000
     );
   }
+
+  ngOnInit() {
+    this.appareils = this.appareilServices.appareils;
+  }
+
   onAllumer(){
     console.log('on allume tout ! ');
   }
