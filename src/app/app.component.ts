@@ -13,7 +13,7 @@ export class AppComponent implements OnInit{
 
   
 
-  appareils: any[] | undefined;
+  appareils!: any[];
   
   constructor (private appareilServices: AppareilService) {
     setTimeout(
@@ -28,6 +28,10 @@ export class AppComponent implements OnInit{
   }
 
   onAllumer(){
-    console.log('on allume tout ! ');
+    // console.log('on allume tout ! ');
+    this.appareilServices.switchOnAll();
+  }
+  onEteindre(){
+    this.appareilServices.switchOfAll();
   }
 }
