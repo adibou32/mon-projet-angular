@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppareilService } from './services/appareil.services';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,12 +9,20 @@ import { AppareilService } from './services/appareil.services';
 })
 export class AppComponent implements OnInit{
   isAuth = false;
-
   lastUpdate = new Date()
+  title = 'blog';
+  myName = 'bruce'
+  getName(){
+    alert("button function")
+  }
+
 
   
 
   appareils!: any[];
+  appareilStatus2= 'éteint';
+  ofEteindre: any;
+  msg: any;
   
   constructor (private appareilServices: AppareilService) {
     setTimeout(
@@ -28,10 +37,15 @@ export class AppComponent implements OnInit{
   }
 
   onAllumer(){
+    if (this.onAllumer()){
+      return this.appareilStatus2 === 'allumé';;
+    } else this.appareilStatus2 === 'éteint';{
+      return this.onAllumer;
+    }
     // console.log('on allume tout ! ');
-    this.appareilServices.switchOnAll();
+    
   }
-  onEteindre(){
-    this.appareilServices.switchOfAll();
-  }
+  // onEteindre(){
+  
+  // }
 }
