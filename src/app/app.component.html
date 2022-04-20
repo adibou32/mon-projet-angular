@@ -1,11 +1,12 @@
 <h1> my Hello World</h1>
 <button (click)="getName()">Get My Name</button>
+<button (click)="toogleTag()">Toggle h2 tag</button>
+<h2 *ngIf="showMe">Toogle me on button click</h2>
 <ul class="list-group">
 <app-mon-premier-component>'mon premier works'</app-mon-premier-component>
 <p>Mis à jour : {{ lastUpdate | date}}</p>
 
-<!-- <app-appareil ngFor="let appareil of appareils" [appareilName]="appareil.name"
-[appareilStatus]="appareil.status"></app-appareil> -->
+<app-appareil ngFor="let appareil of appareils; let i = index"  ></app-appareil>
 <!-- <app-appareil ngFor="let appareil of appareils" [appareilName]="appareil.name"
 [appareilStatus]="appareil.status"></app-appareil> -->
 <!-- <app-appareil>'Télévision'</app-appareil>

@@ -14,6 +14,7 @@ export class MonPremierComponentComponent implements OnInit {
   @ Input() appareilOn = '&&&';
   @ Input() colorRed = '&&&';
   @ Input() lastUpdate = 'uppercase';
+  @ Input() indexOfAppareils: number | undefined;
   
   // @ Input() colorGreen = 'Green';
   

@@ -8,6 +8,7 @@ import { AppareilService } from './services/appareil.services';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+  showMe:boolean = true;
   isAuth = false;
   lastUpdate = new Date()
   title = 'blog';
@@ -15,11 +16,10 @@ export class AppComponent implements OnInit{
   getName(){
     alert("button function")
   }
-
-
-  
-
-  appareils!: any[];
+  toogleTag(){
+    this.showMe=!this.showMe
+  }
+   appareils!: any[];
   appareilStatus2= 'éteint';
   ofEteindre: any;
   msg: any;
