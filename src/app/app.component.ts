@@ -17,7 +17,7 @@ export class AppComponent implements OnInit{
     alert("button function")
   }
   toogleTag(){
-    this.showMe=!this.showMe
+    this.showMe
   }
    appareils!: any[];
   appareilStatus2= 'éteint';

@@ -8,22 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class AppareilComponent implements OnInit {
   appareilName = 'machine à laver';
   appareilFunction = 'laver';
-  // appareilStatus: string;
-  appareilStatus2 = 'éteint';
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  getColor(){
-    if (this.appareilStatus2 == 'allumé'){
- 
-    }
-     return 'red' ;
-     
-         
-     }
+  
    
 }
-
 
