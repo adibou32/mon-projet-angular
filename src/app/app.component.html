@@ -1,6 +1,7 @@
-<h1> my Hello World</h1>
-<button (click)="getName()">Get My Name</button>
-<button (click)="toogleTag()">Toggle h2 tag</button>
+<p>appareil-view works!</p>
+<!-- <h1> my Hello World</h1> -->
+ <button (click)="getName()">Get My Name</button> 
+<button (click)="toogleTag()">Toggle h2 tag</button> -->
 <h2 *ngIf="showMe">Toogle me on button click</h2>
 <ul class="list-group">
 <app-mon-premier-component>'mon premier works'</app-mon-premier-component>
@@ -15,12 +16,6 @@
 </ul>
 
 
-
-<button class ="btn btn-sucess" 
-[disabled]="!isAuth"
- click="onAllumer()" >Tout allumer</button>
-
- <button class ="btn btn-danger" click="ofEteindre()">Tout éteindre</button>
 
 <button class ="btn btn-sucess" 
 [disabled]="!isAuth"

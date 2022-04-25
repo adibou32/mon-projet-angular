@@ -1,4 +1,12 @@
+import { Injectable } from "@angular/core";
+
+@Injectable({
+  providedIn: "root"
+})
 export class AppareilService {
+  switchOfAll() {
+    throw new Error('Method not implemented.');
+  }
     appareils = [
         {
           name: 'Machine à laver',
@@ -18,7 +26,7 @@ export class AppareilService {
               appareil.status = 'allumé'
           }
       }
-      switchOfAll () {
+      switchOffAll () {
         for(let appareil of this.appareils){
             appareil.status  = 'éteint'
         }
